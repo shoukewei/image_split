@@ -3,6 +3,32 @@ import random
 import shutil
 
 def train_val_test_split(input_dir, output_dir, train_ratio, test_ratio, seed, val_ratio=None):
+
+    """
+    Split image dateset into train, validation and test sets, and automatically
+    create three subfolders in the output_dir in the Currently Working Directory:
+    - train
+    - val
+    - test
+
+    Constructor method.
+        Parameters
+        ----------
+        input dir: the orginal image data path
+        output dir: the path to store the split data
+        train_ratio: the ratio of train data number to the total data number
+        val_ratio: the ratio of validation data number to the total data number, default is 0
+        test_ratio: the ratio of test data number to the total data number
+        
+        Return
+        ---------- 
+        train: the train directory containing train data set
+        val: the val directory containing validation data set
+        test: the test directory containing test data set
+
+        If val_ratio is not specified, i.e. default 0, it only generates train and test sets
+    """
+    
     categories = os.listdir(input_dir)
     random.seed(seed)
     random.shuffle(categories)

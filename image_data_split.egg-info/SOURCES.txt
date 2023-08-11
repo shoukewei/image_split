@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+image_data_split.egg-info/PKG-INFO
+image_data_split.egg-info/SOURCES.txt
+image_data_split.egg-info/dependency_links.txt
+image_data_split.egg-info/top_level.txt
+image_split/__init__.py
+image_split/split.py

@@ -1,3 +1,21 @@
+Metadata-Version: 2.1
+Name: image-data-split
+Version: 1.0.2
+Summary: Image data split package for machine learning
+Home-page: https://github.com/shoukewei/image_split
+Author: Shouke Wei
+Author-email: shouke.wei@gmail.com
+License: MIT License
+Keywords: python,image data,split,train,validation,test,machine learning
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # Descripstats
 
 The **'image-data-split'** package provides a convenient tool for splitting image data into separate training, validation, and testing sets. With this package, you can easily manage the distribution of your image dataset for machine learning tasks. The package offers a simple function, **'image_split'**, that takes input and output directories, along with desired split ratios and an optional seed for randomization. The package is designed to streamline the process of data preparation, making it easier to organize and manage image datasets for model training and evaluation.

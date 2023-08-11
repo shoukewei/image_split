@@ -3,15 +3,15 @@ from setuptools import setup, find_packages
 
 from pathlib import Path
 
-VERSION = '0.0.2'
-DESCRIPTION = 'image data split package'
+VERSION = '1.0.2'
+DESCRIPTION = 'Image data split package for machine learning'
 
 this_directory = Path(__file__).parent
 LONG_DESCRIPTION = (this_directory / "README.md").read_text()
 
 # Setting up
 setup(
-    name="image_split",
+    name="image-data-split",
     version=VERSION,
     author="Shouke Wei",
     author_email="shouke.wei@gmail.com",
