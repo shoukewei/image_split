@@ -1,0 +1,14 @@
+{"timestamp": "2026-06-11T22:45:05.035416", "experiment_id": "advertising_example", "level": "INFO", "event": "pipeline_started", "config_keys": ["experiment_id", "seed", "data", "splitting", "preprocessing", "models", "output"]}
+{"timestamp": "2026-06-11T22:45:05.147721", "experiment_id": "advertising_example", "level": "INFO", "event": "seed_set", "seed": 42}
+{"timestamp": "2026-06-11T22:45:05.227186", "experiment_id": "advertising_example", "level": "ERROR", "event": "pipeline_failed", "error": "'url'"}
+{"timestamp": "2026-06-11T22:56:46.130079", "experiment_id": "advertising_example", "level": "INFO", "event": "pipeline_started", "config_keys": ["experiment_id", "seed", "data", "splitting", "preprocessing", "models", "output"]}
+{"timestamp": "2026-06-11T22:56:46.143451", "experiment_id": "advertising_example", "level": "INFO", "event": "seed_set", "seed": 42}
+{"timestamp": "2026-06-11T22:56:46.322690", "experiment_id": "advertising_example", "level": "INFO", "event": "data_loaded", "rows": 10, "columns": ["TV", "radio", "newspaper", "sales"], "path": "C:\\Users\\shouk\\AppData\\Local\\Temp\\tmpix7171_2\\advertising.csv"}
+{"timestamp": "2026-06-11T22:56:46.499915", "experiment_id": "advertising_example", "level": "INFO", "event": "eda_complete", "missing_columns": [], "high_skew_columns": []}
+{"timestamp": "2026-06-11T22:56:46.896551", "experiment_id": "advertising_example", "level": "INFO", "event": "split_complete", "train_rows": 8, "test_rows": 2, "test_size": 0.2}
+{"timestamp": "2026-06-11T22:56:46.904229", "experiment_id": "advertising_example", "level": "INFO", "event": "preprocessing_complete", "steps": ["missing", "outliers", "scaling"], "train_shape": [6, 3], "test_shape": [2, 3]}
+{"timestamp": "2026-06-11T22:56:47.072846", "experiment_id": "advertising_example", "level": "WARNING", "event": "high_vif_detected", "features": ["radio"]}
+{"timestamp": "2026-06-11T22:56:47.129729", "experiment_id": "advertising_example", "level": "INFO", "event": "significance_check", "significant_features": [], "insignificant_features": ["TV", "radio", "newspaper"]}
+{"timestamp": "2026-06-11T22:56:47.705072", "experiment_id": "advertising_example", "level": "INFO", "event": "model_comparison_complete", "models_compared": ["linear", "ridge"], "best_model": "ridge", "best_val_r2": -8.7036}
+{"timestamp": "2026-06-11T22:56:47.745336", "experiment_id": "advertising_example", "level": "INFO", "event": "final_evaluation", "train_r2": 0.7081, "train_rmse": 2.3727, "train_mae": 1.9808, "train_mape": 0.1783, "test_r2": 0.9526, "test_rmse": 0.6096, "test_mae": 0.6096, "test_mape": 0.0927}
+{"timestamp": "2026-06-11T22:56:48.688931", "experiment_id": "advertising_example", "level": "INFO", "event": "pipeline_complete", "status": "success", "artifact_dir": "C:\\Users\\shouk\\AppData\\Local\\Temp\\tmpix7171_2\\experiments\\advertising_example", "best_model": "ridge"}

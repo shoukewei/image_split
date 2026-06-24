@@ -1,0 +1,55 @@
+{
+  "seed": 42,
+  "splitting": {
+    "test_size": 0.2,
+    "val_size": 0.1,
+    "stratified": false,
+    "random_state": 42
+  },
+  "preprocessing": {
+    "missing": {
+      "strategies": {},
+      "indicator_columns": []
+    },
+    "outliers": {
+      "columns": [
+        "TV",
+        "Newspaper"
+      ],
+      "method": "iqr",
+      "multiplier": 1.5
+    },
+    "scaling": {
+      "columns": [
+        "TV",
+        "Radio",
+        "Newspaper"
+      ],
+      "method": "standard"
+    }
+  },
+  "output": {
+    "experiments_dir": "experiments",
+    "registry_path": "registry/experiments.json",
+    "production_dir": "production",
+    "configs_dir": "configs",
+    "logs_dir": "logs"
+  },
+  "models": {
+    "gradient_boosting": {
+      "class": "GradientBoostingRegressor",
+      "params": {
+        "n_estimators": 100,
+        "max_depth": 3,
+        "random_state": 42
+      }
+    }
+  },
+  "notes": "Gradient boosting baseline.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/selva86/datasets/master/Advertising.csv",
+    "target": "Sales",
+    "index_col": 0
+  },
+  "experiment_id": "advertising_gb_v1"
+}

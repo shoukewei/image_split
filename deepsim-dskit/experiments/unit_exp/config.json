@@ -1,0 +1,51 @@
+{
+  "experiment_id": "unit_exp",
+  "seed": 42,
+  "data": {
+    "url": "C:\\Users\\shouk\\AppData\\Local\\Temp\\pytest-of-shouk\\pytest-56\\test_run_experiment_uses_model0\\advertising.csv",
+    "target": "Sales",
+    "read_kwargs": {
+      "index_col": 0
+    }
+  },
+  "splitting": {
+    "test_size": 0.2,
+    "val_size": 0.2,
+    "random_state": 42
+  },
+  "preprocessing": {
+    "missing": {
+      "strategies": {},
+      "indicator_columns": []
+    },
+    "outliers": {
+      "columns": [],
+      "method": "iqr",
+      "multiplier": 1.5
+    },
+    "scaling": {
+      "columns": [
+        "TV",
+        "Radio",
+        "Newspaper"
+      ],
+      "method": "standard"
+    }
+  },
+  "models": {
+    "linear": {
+      "class": "LinearRegression",
+      "params": {}
+    },
+    "ridge": {
+      "class": "Ridge",
+      "params": {
+        "alpha": 1.0
+      }
+    }
+  },
+  "output": {
+    "experiments_dir": "C:\\Users\\shouk\\AppData\\Local\\Temp\\pytest-of-shouk\\pytest-56\\test_run_experiment_uses_model0\\experiments",
+    "registry_path": "C:\\Users\\shouk\\AppData\\Local\\Temp\\pytest-of-shouk\\pytest-56\\test_run_experiment_uses_model0\\registry\\experiments.json"
+  }
+}

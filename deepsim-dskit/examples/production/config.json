@@ -1,0 +1,54 @@
+{
+  "experiment_id": "advertising_example",
+  "seed": 42,
+  "data": {
+    "path": "C:\\Users\\shouk\\AppData\\Local\\Temp\\tmpix7171_2\\advertising.csv",
+    "target": "sales",
+    "read_kwargs": {
+      "index_col": 0
+    }
+  },
+  "splitting": {
+    "test_size": 0.2,
+    "val_size": 0.2,
+    "random_state": 42
+  },
+  "preprocessing": {
+    "missing": {
+      "strategies": {},
+      "indicator_columns": []
+    },
+    "outliers": {
+      "columns": [],
+      "method": "iqr",
+      "multiplier": 1.5
+    },
+    "scaling": {
+      "columns": [
+        "TV",
+        "radio",
+        "newspaper"
+      ],
+      "method": "standard"
+    }
+  },
+  "models": {
+    "linear": {
+      "class": "LinearRegression",
+      "params": {}
+    },
+    "ridge": {
+      "class": "Ridge",
+      "params": {
+        "alpha": 1.0
+      }
+    }
+  },
+  "output": {
+    "experiments_dir": "C:\\Users\\shouk\\AppData\\Local\\Temp\\tmpix7171_2\\experiments",
+    "registry_path": "C:\\Users\\shouk\\AppData\\Local\\Temp\\tmpix7171_2\\registry\\experiments.json",
+    "production_dir": "production",
+    "configs_dir": "configs",
+    "logs_dir": "logs"
+  }
+}
