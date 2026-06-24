@@ -4,3 +4,4 @@ descripstats.egg-info
 .ipynb_checkpoints
 .virtual_documents
 __pycache__
+image_data_split.egg-info/
